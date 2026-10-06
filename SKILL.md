@@ -15,7 +15,7 @@ description: Write or redesign a project's public-facing README (项目介绍) t
 | ④ 隐私扫描 | 全库文本 + 图片 + Git 历史 | 零敏感残留 |
 | ⑤ 发布批准 | commit / push | 用户明确说"推" |
 
-开始前先读 [盘点与事实核对](references/intake-and-facts.md)。写正文前读 [框架与逐节迭代](references/framework-and-iteration.md)。做展示图和打码前读 [图文展示与打码](references/showcase-and-redaction.md)。配生态图标前读 [图标采集](references/icon-sourcing.md)。进入预览与发布阶段前读 [发布门禁](references/publish-gates.md)。
+开始前先读 [盘点与事实核对](references/intake-and-facts.md)。写正文前读 [框架与逐节迭代](references/framework-and-iteration.md)。做展示图和打码前读 [图文展示与打码](references/showcase-and-redaction.md)。画流程图前读 [流程图规则](references/flow-diagrams.md)。配生态图标前读 [图标采集](references/icon-sourcing.md)。进入预览与发布阶段前读 [发布门禁](references/publish-gates.md)。
 
 ## 工作流七步
 
@@ -31,11 +31,12 @@ description: Write or redesign a project's public-facing README (项目介绍) t
 
   1. 这是什么？（出身故事钩子 + 能力清单）
   2. 最终成品是什么？（产物表格 + 每个产物一张实拍图）
-  3. 我应该准备什么材料？（三步上手）
-  4. 我可以在哪些工具上使用？（生态适配：名称+图标，双安装路径）
-  5. 使用技巧（怎么指挥 AI / 每类产物怎么用）
-  6. FAQ + 边界
-  7. 附录：文件结构
+  3. 模块与流程（先一张**模块总览图**：有哪些模块、各管什么；再每个模块一张**内部流程图**加介绍，规则见 [流程图规则](references/flow-diagrams.md)）
+  4. 我应该准备什么材料？（三步上手）
+  5. 我可以在哪些工具上使用？（生态适配：名称+图标，双安装路径）
+  6. 使用技巧（怎么指挥 AI / 每类产物怎么用）
+  7. FAQ + 边界
+  8. 附录：文件结构
 
 - 库、网站等其他类型的变体见 [框架与逐节迭代](references/framework-and-iteration.md)。
 
@@ -48,6 +49,7 @@ description: Write or redesign a project's public-facing README (项目介绍) t
 ### 第 4 步：图文展示
 
 - 每个产物类型必须"真实截图 + 一段说明"，缺图就渲染补拍。
+- 流程图分两层、顺序固定：开头一张**模块总览图**（每个模块的功能是什么、模块之间怎么衔接），后面每个模块一张**内部流程图**（该模块内部的步骤与分支）。两层的模块一一对应，全部同一种风格。规则见 [流程图规则](references/flow-diagrams.md)。
 - 敏感信息打码：人名、邮箱、账号、课程/客户代码、绝对路径。打码后不写"已打码"类说明。规则见 [图文展示与打码](references/showcase-and-redaction.md)。
 - 生态图标只用官方来源，重名产品先向用户确认，规则见 [图标采集](references/icon-sourcing.md)。
 
@@ -84,3 +86,4 @@ description: Write or redesign a project's public-facing README (项目介绍) t
 6. 用户改了某一节的表述后，其余节里同一事实的旧表述全部同步。
 7. "已打码"、"下图涉及隐私"之类的说明文字不进正文。
 8. 预览 HTML、临时截图脚本不入库。
+9. 流程图先模块、后内部：开头的总览图只画模块和功能，内部的步骤、分支、回路一律放到各模块自己的内部流程图里；总览里的每个模块都要有对应的内部图，名字一致。
